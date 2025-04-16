@@ -1,0 +1,40 @@
+/* April 16th 2025 */
+
+/* Pseudo-elements
+   - virtual or synthetic elements that don't directly
+     match any actual HTML elements
+*/
+
+selector::pseudo-element {
+    display: none; 
+}
+
+/* Originating Element:
+   - the element to which a pseudo-element is attached
+*/
+
+.cta-button::before {
+    content: "⭐";
+}
+
+.cta-button:hover::before {
+    transform: translateX(2px);
+}
+
+/* ::first-letter
+   - targets the first letter of an element's content,
+     allowing you to style it
+*/
+
+p::first-letter {
+    font-size: 4rem;
+}
+
+/* ::marker
+   - used to select the marker (bullet or numbering)
+     of list items for styling
+*/
+
+li::marker {
+    color: orange;
+}
