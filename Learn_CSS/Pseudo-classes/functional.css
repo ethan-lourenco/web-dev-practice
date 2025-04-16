@@ -1,0 +1,51 @@
+/* April 16th 2025 */
+
+/* Functional Pseudo-classes
+   - used to select elements based on more
+     complex conditions or relationships
+*/
+
+/* Examples: 
+   - :is()
+   - :where()
+   - :has()
+   - :not()
+*/
+
+/* :is()
+   - useful when you want to style a group of elements
+     that share some, but not all, characteristics
+*/
+
+:is(button, a.button, input[type='submit'], input[type='reset']) {
+    background-color: darkblue;
+}
+
+/* :where()
+   - similar to :is() but doesn't increase the 
+     specificity of the selectors
+*/
+
+:where(h1, h2, h3) {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* :has()
+   - used to apply styles to a parent element based
+     on the presence or state of its child elements
+*/
+
+article:has(h2) {
+    border: 2px solid green;
+}
+
+/* :not()
+   - ideal when you want to apply styles to a group
+     of elements, excluding one or more specific exceptions
+*/
+
+button:not(.primary) {
+    background-color: grey;
+}   
