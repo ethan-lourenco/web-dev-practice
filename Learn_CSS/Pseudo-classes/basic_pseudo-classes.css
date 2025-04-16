@@ -1,0 +1,32 @@
+/* April 16th 2025 */
+
+/* Pseudo-classes are special CSS keywords that let you */
+/* select an element based on its state or position */
+
+selector:psequo-class { 
+    /* CSS properties */
+}
+
+/* Example for HTML div with 4 paragraph children */
+.container p:first-child {
+    background: lightcoral;
+    padding: 0.4rem;
+}
+
+.container p:last-child {
+    background: lightcoral;
+    padding: 0.4rem;
+}
+
+/* Links */
+a:visited {
+    color: purple;
+}
+
+button:disabled {
+    background-color: lightgrey;
+}
+
+/* Other Pseudo-classes */
+/* :focus, :first-of-type, :last-of-type, :nth-of-type, */
+/* :modal, :enabled, :checked, :required */
