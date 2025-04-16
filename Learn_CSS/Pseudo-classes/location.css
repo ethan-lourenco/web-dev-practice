@@ -1,0 +1,51 @@
+/* April 16th 2025 */ 
+
+/* Location Pseudo-classes
+   - apply styles based on whether a link is visited or
+     whether an element is currently in focus
+*/
+
+/* Examples: 
+   - :link
+   - :visited
+   - :any-link
+   - :local-link (not currently supported by any browser)
+   - :target
+   - :target-within
+*/
+
+/* :link
+    - target all unvisited links on a webpage 
+*/
+
+a:link {
+    color: magenta;
+}
+
+/* :visited
+    - targets links the user has already clicked
+*/
+
+a:visited {
+    color: purple;
+}
+
+/* :any-link
+    - matches any anchor element with an href attribute,
+      regardless of whether it's visited or not
+*/
+
+a:any-link {
+    color: crimson;
+}
+
+/* :target
+    - selects an element that matches the current
+      URL fragment identifier
+*/
+
+section:target {
+    background-color: green;
+    border: 2px solid green;
+    padding: 10px;
+}
