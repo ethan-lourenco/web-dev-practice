@@ -1,4 +1,63 @@
 /* April 16th 2025 */
 
-/* Element User Action Pseudo-classes */
+/* User Action Pseudo-classes 
+   - Special keywords that allow you to provide 
+     feedback on the state of interactive elements 
+*/
 
+/* :active 
+    - applies styles when an element 
+      is activated by the user 
+*/
+
+a:active {
+    color: crimson; 
+}
+
+/* :hover 
+    - triggered when a user hovers over an element
+      with a mouse or other pointing device
+*/
+
+.btn:hover {
+    background-color: crimson;
+    color: white;
+    cursor: pointer; 
+}
+
+/* :focus 
+    - applies when an element gains focus
+*/
+
+input:focus {
+    outline: 2px solid darkgreen;
+    border-radius: 4px;
+}
+
+/* :visited 
+    - targets a link the user has visited
+*/
+
+a:visited {
+    color: cyan;
+}
+
+/* :checked 
+    - allows you to style form elements such as 
+      checkboxes and radio buttons when they are
+      selected (checked)
+*/
+
+.checkbox:checked {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: red;    
+}
+
+/* Other examples: 
+   - :focus-within
+   - :enabled
+   - :disabled
+   - :target
+*/
