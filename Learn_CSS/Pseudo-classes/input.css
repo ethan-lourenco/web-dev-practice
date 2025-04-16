@@ -1,0 +1,32 @@
+/* April 16th 2025 */
+
+/* Input Pseudo-classes */
+
+/* :valid / :invalid
+    - to style the input fields that do/don't 
+      meet the validation criteria
+*/
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+/* :disabled
+    - select and style disabled input elements 
+*/
+
+.text-input:disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+
+/* Other examples: 
+   - :autofill
+   - :optional
+   - :in-range
+   - :out-of-range
+*/
