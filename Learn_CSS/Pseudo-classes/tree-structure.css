@@ -1,0 +1,37 @@
+/* April 16th 2025 */
+
+/* Tree-structural Pseudo-classes
+   - allows you to target and style elements based
+     on their position within the document tree 
+*/
+
+/* Examples:
+   - :root
+   - :empty 
+   - :nth-child(n) 
+   - :nth-last-child(n)
+   - :first-child
+   - :last-child
+   - :only-child
+   - :nth-of-type
+   - :first-of-type
+   - :last-of-type
+   - :only-of-type
+*/
+
+/* :root
+   - targets the highest level in the document
+*/
+
+:root {
+    background: black;
+    color: aliceblue;
+}
+
+/* :empty
+   - elements with no children
+*/
+
+:empty {
+    display: none;
+}
