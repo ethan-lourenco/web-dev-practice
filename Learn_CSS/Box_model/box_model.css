@@ -1,0 +1,65 @@
+/* April 19th 2025 */
+
+/* CSS Box Model: 
+   - defines how HTML elements are structured and positioned
+*/
+
+/* In the box model, every element is surrounded by a box: 
+
+    Inner-most ------------------> Outer-most
+
+    Content -> Padding -> Border -> Margin
+
+*/
+
+/* Margin Collapsing:
+   - occurs when the vertical margins of adjacent elements
+     overlaps, resulting in a single margin equal to the 
+     larger of the two
+*/
+
+/* content-box V.S. border box */
+
+/* width & height include content area only (use when precise control of content area is needed) */
+#red-div {
+    box-sizing: content-box;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 4px solid black;
+    margin: 10px;
+    background-color: red;
+}
+
+/* width & height include content area, padding and border, but not the margin */
+#blue-div {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 4px solid black;
+    margin: 10px;
+    background-color: blue;
+}
+
+/* CSS Reset: 
+   - a stylesheet that removes all or some of the default
+     formatting that web browsers apply to HTML elements
+*/
+
+/* CSS Filter Property: 
+   - a powerful tool that allows you to apply graphical
+     effects to elements on a web page
+
+   Basic syntax:
+
+   selector {
+      filter: function(amount);
+   } 
+
+*/
+
+/* Examples: */
+img {
+    filter: blur(5px) brightness(150%) grayscale(100%);
+}
