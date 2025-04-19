@@ -1,0 +1,63 @@
+/* April 18th 2025 */
+
+body {
+    background: linear-gradient(to right, #9acfe7, #f098a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.form-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: Tahoma;
+    width: 60vw;
+    min-height: 350px;
+    min-width: 300px;
+}
+
+label {
+    margin: 10px 0px;
+    width: 100%;
+    color: #000000;
+    border-radius: 8px;
+}
+
+input {
+    width: 80%;
+    padding: 5px 0px;
+    margin: 5px auto 20px auto;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+textarea {
+    width: 80%;
+    margin: 5px auto 20px auto;
+    padding: 5px 0px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    width: 24%;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #409444;
+}
