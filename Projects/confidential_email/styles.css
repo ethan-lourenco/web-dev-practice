@@ -1,0 +1,39 @@
+/* April 19th 2025 */
+
+body {
+    background-color: #FFFFFF;
+  }
+  
+  #email {
+    background-color: #FFF5EE;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 500px;
+    padding: 50px;
+    margin: 50px auto 0 auto;
+  }
+  
+  #confidential, #top-secret {
+    display: inline-block;
+    border: 5px solid rgba(255, 0, 0, 70%);
+    color: rgba(255, 0, 0, 70%);
+    font-weight: bold;
+    font-family: "sans-serif";
+    padding: 10px;
+  }
+  
+  #confidential {
+    font-size: 30px;
+    transform: rotate(-20deg);
+    margin-left: 34%;
+  }
+  
+  #top-secret {
+    font-size: 20px;
+    transform: rotate(15deg);
+    margin-left: 50%;
+  }
+  
+  .blurred {
+    filter: blur(3px);
+  }
