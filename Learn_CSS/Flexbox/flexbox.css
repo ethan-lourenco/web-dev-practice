@@ -1,0 +1,89 @@
+/* April 19th 2025 */
+
+/* Flex Container
+   - HTML element with a flex layout
+*/
+
+/* Flex Items
+   - the direct children of a flex container
+*/
+
+main {
+    display: flex;
+}
+
+/* Flex Model
+   - model that defines how flex items are arranged
+     within a flex container
+
+   The Flex Model has two axis that are always perpendicular:
+
+   ^ Cross axis
+   |
+   |
+   |
+   v
+  <-------------------> 
+         Main axis
+
+*/
+
+main {
+    flex-direction: row; /* Default */
+    flex-direction: row-reverse;
+    flex-direction: column; /* Default */
+    flex-direction: column-reverse;
+}
+
+/* Flex Properties
+   - CSS properties that determine how flex items
+     will be arranged, resized, and distributed
+     within the flex container
+*/
+
+/* flex-wrap
+   - determines how flex items are wrapped within
+     a flex container
+*/
+
+main {
+    flex-wrap: wrap;
+    flex-flow: column wrap-reverse; /* Shorthand property */
+}
+
+/* justify-content
+   - aligns the child elements along the main
+     axis of the flex container
+*/
+
+main {
+    justify-content: flex-start;    
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+/* align-items
+   - distributes flex items along the cross axis
+*/
+
+main {
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch;
+}
+
+/* align-self
+   - used to assign different alignment on the 
+     cross axis to an individual flex item
+*/
+
+main {
+    align-self: stretch;
+    align-self: center;
+    align-self: flex-end;
+    align-self: flex-start;
+}
