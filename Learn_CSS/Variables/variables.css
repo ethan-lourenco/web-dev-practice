@@ -1,0 +1,36 @@
+/* April 23rd 2025 */
+
+/* CSS custom properties 
+   - entities defined by CSS authors that contain
+     specific values to be reused throughout a document
+*/
+
+/* Syntax */
+:root {
+    --main-color: #3498db;
+}
+
+.button {
+    background-color: var(--main-color);
+}
+
+.alert {
+    --main-color: #e74c3c;
+    background-color: var(--main-color, black);
+}
+
+/* @property rule 
+   - feature that allows developers to define custom
+     properties with greater control over their behavior
+*/
+
+/* Syntax */
+@property --main-color {
+    syntax: '<--main-color>';
+    inherits: false;
+    initial-value: #3498db;
+}
+
+.button {
+    background-color: var(--main-color, #3498db);
+}
