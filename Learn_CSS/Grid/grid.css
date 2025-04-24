@@ -1,0 +1,9 @@
+/* April 24th 2025 */
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 15px;
+}
