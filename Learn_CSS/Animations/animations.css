@@ -1,0 +1,36 @@
+/* April 30th 2025 */
+
+/* CSS Animations
+   - allows you to create dynamic, visually engaging effects
+     on web pages without the need for JavaScript or complex
+     programming
+*/
+
+/* Example */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.sliding-element {
+    animation: slide in 2s ease-out;
+}
+
+/* Accessibility Concerns */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
