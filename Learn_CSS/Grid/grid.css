@@ -1,9 +1,105 @@
 /* April 24th 2025 */
 
-
+/* CSS Grid
+   - divides the web page into rows and columns,
+     creating a grid-like structure
+*/
 
 .grid-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     gap: 15px;
+    height: 100%;
+}
+
+/* fr Unit
+   - a fractional unit, which represents a fraction
+     of the space for the grid container
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    height: 100%;
+}
+
+/* track
+   - the space between two neighboring grid lines
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap shorthand
+       - first is for row
+       - second is for column
+    */
+    gap: 30px 10px;
+}
+
+/* repeat()
+   - function used to repeat a section or all of 
+     the tracks for columns or rows
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
+
+/* Implicit Grid
+   - the rows and columns automatically created by 
+     the browser when placing items in a grid layout
+*/
+
+/* minmax()
+   - defines the range for the size of a grid track,
+     specifying how much space a row or column can occupy
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) 1fr;
+    gap: 20px;
+}
+
+/* grid-column & grid-row
+   - specify the horizontal and vertical placement of grid
+     items within a grid layout
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(3, 100px); /* 3 equal rows */
+    gap: 10px;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / span 2;
+}
+
+/* grid-template-areas basic syntax
+
+   grid-template-areas:
+   "header header header"
+   "left-sidebar main right-sidebar"
+   "footer footer footer"
+
+*/
+
+.header {
+    grid-area: header;
+    background-color: #4caf50;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-left {
+    grid-area: left-sidebar;
+    background-color: #ba2e2e;
+    padding: 20px;
 }
