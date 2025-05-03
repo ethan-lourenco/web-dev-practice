@@ -115,3 +115,34 @@ console.log(reversedString); // "olleh"
 let string = "coding";
 let reversed = string.split("").reverse().join("");
 console.log(reversed); // gnidoc
+
+/* indexOf() Method
+   - useful for finding the first index of a specific element within
+     an array, if the element can't be found, it will return -1
+*/
+
+/* splice() Method
+   - allows you to add or remove elements from any position in an
+     array, including the middle, returns array of removed elements
+
+     Syntax:
+     array.splice(startIndex, itemsToRemove, item1, item2)
+*/
+
+/* includes() Method
+   - checks if an array contains a specific value, returns a boolean
+     value, true or false
+*/
+
+/* Shallow Array Copy
+   - a new array that contains references to the same elements as the
+     original array
+*/
+
+/* The Spread (...) Operator
+   - used to create shallow copies of arrays
+*/
+
+let originalArray = [1, 2, 3];
+let copyArray = [...originalArray];
+console.log(copyArray === originalArray); // false
