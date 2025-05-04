@@ -11,6 +11,16 @@ age = 30;
 
 // Data Types
 
+/* Primitive Data Types
+   - represent single values, like strings and numbers
+     and are not objects, these are immutable
+*/
+
+/*  Non-Primitive Data Types
+   - objects, arrays, functions, can hold multiple values
+     as properties or elements, these are mutable
+*/
+
 /* Number
    - represents both integers and floating-point numbers
 */
@@ -36,9 +46,9 @@ age = 30;
 */
 
 let book = {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925
+  title: "The Great Gatsby",
+  author: "F. Scott Fitzgerald",
+  year: 1925,
 };
 
 /* Symbol
@@ -46,8 +56,8 @@ let book = {
      can't be changed
 */
 
-const symbol1 = Symbol('mySymbol');
-const symbol2 = Symbol('mySymbol');
+const symbol1 = Symbol("mySymbol");
+const symbol2 = Symbol("mySymbol");
 console.log(symbol1 === symbol2); // Outputs: false
 
 /* BigInt
@@ -55,7 +65,7 @@ console.log(symbol1 === symbol2); // Outputs: false
 */
 
 const bigNumber = 9238490237409193018039438n;
-console.log(bigNumber)
+console.log(bigNumber);
 // Outputs: 9238490237409193018039438n
 
 /* typeof Operator
