@@ -52,3 +52,14 @@ console.log(letter.charCodeAt(0));
 
 let char = String.fromCharCode(65);
 console.log(char); // Output: A
+
+/* toString() method
+   - converts a value to its string representation 
+*/
+
+// Examples
+const num = 10;
+console.log(num.toString()); // "10"
+
+const arr = [1, 2, 3];
+console.log(arr.toString()); // "1,2,3"
