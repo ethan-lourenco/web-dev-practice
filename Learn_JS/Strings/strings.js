@@ -36,7 +36,7 @@ console.log(result); // Output: true
 
 let message = "Hello, world!";
 let greet = message.slice(0, 5);
-console.log(greet) // Output: Hello
+console.log(greet); // Output: Hello
 
 // Prompt
 
@@ -52,7 +52,3 @@ console.log(letter.charCodeAt(0));
 
 let char = String.fromCharCode(65);
 console.log(char); // Output: A
-
-
-
-
