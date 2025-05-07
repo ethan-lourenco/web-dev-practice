@@ -199,3 +199,39 @@ openButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   dialog.close();
 });
+
+// Example AI Code
+let button = document.getElementById("add-button");
+
+button.addEventListener("click", () => {
+  let input = document.querySelector("#item-input");
+  let inputValue = input.value;
+
+  let newItem = document.createElement("li"); // Create <li>
+  newItem.textContent = inputValue; // Set its text
+
+  let list = document.getElementById("item-list");
+  list.appendChild(newItem); // Add it to the <ul>
+
+  input.value = ""; // Optional: clears the input after adding
+});
+
+/* The change Event
+   - special event which is fired when the user modifies the 
+     value of certain input elements
+*/
+
+/* Event Bubbling
+   - A.K.A. propagation, refers to how an event "bubbles up" to
+     parent objects when triggered
+*/
+
+/* Event Delegation
+   - process of taking a captured event, and delegating it to 
+     another element
+*/
+
+const p = document.querySelector("p");
+p.addEventListener("click", (event) => {
+  event.target.style.color = "red";
+});
