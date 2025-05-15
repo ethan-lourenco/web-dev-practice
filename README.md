@@ -3,16 +3,17 @@
 Notes and simple projects I learned using freecodecamps Full Stack Developer Curriculum
 
 # Features
-- Simple HTML
-- Simple-Intermediate CSS
-- Simple JS (Coming Soon)
 
-# Technologies Used
-- Languages:
-    - HTML
-    - CSS
-    - JavaScript (Coming Soon)
+- Simple HTML
+- Simple CSS
+- Simple JS
+
+# Languages Used
+
+- HTML
+- CSS
+- JavaScript
 - Tools:
-    - Git
-    - Github Desktop
-    - VS Code
+  - Git
+  - Github Desktop
+  - VS Code
